@@ -1,0 +1,8 @@
+<h1>Welcome {{ UserName }}</h1>
+
+<h2>WORD COUNT</h2>
+
+<form action="{% url 'count' %}"> <!-- defining which url to pass the form information to when it is submitted -->
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <input type="submit" value="Count!" /> <!-- submits the form when clicked with fulltext as a parameter in query string -->
+</form>

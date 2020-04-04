@@ -1,0 +1,12 @@
+<b><a href="{% url 'home' %}">Back to Home</a></b>
+
+<h4>Your text is "{{ fulltext }}"</h4>
+<br/>
+<h4>The total number of words in your text is {{ wordcount }}</h4>
+<br/>
+<h4>The occurence of each word in your text is:</h4>
+<br/>
+{% for k, v in eachwordcount %}
+    {{ k }}: {{ v }}
+    <br/>
+{% endfor %}
